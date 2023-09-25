@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Store Website</title>
+    <link rel="stylesheet" href="/Style/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Gammers</a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="tournaments.html">Tournaments</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="action">
+        <div class="searchBx">
+          <a href="#"><i class="bx bx-search-alt"></i></a>
+          <input type="text" placeholder="Search Games" />
+        </div>
+      </div>
+      <div class="toggleMenu" onclick="toggleMenu()"></div>
+    </header>
+<br><br>
+    <!-- Games -->
+    <div class="games" id="games">
+      <h2>Popular Games</h2>
+      <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="pc">PC Games</li>
+        <li class="list" data-filter="mobile">Mobile Games</li>
+        <li class="list" data-filter="PS">Play Station</li>
+        <li class="list" data-filter="xbox">Xbox</li>
+      </ul>
+      <div class="cardBx">
+        <div class="card" data-item="pc">
+          <img src="imagini/GTAOnline.jpg" />
+          <div class="content">
+            <h4>Grand Theft Auto V</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>23.05$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="imagini/Forza Horizon 5.jpg" />
+          <div class="content">
+            <h4>Forza Horizon 5</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>35.75$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="PS">
+          <img src="imagini/God Of War.webp" />
+          <div class="content">
+            <h4>God Of War Ragnarok</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>70.25$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="imagini/Fifa23.jpg" />
+          <div class="content">
+            <h4>FIFA 23</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>59.99$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="imagini/Assassin Creed Rogue.jpg" />
+          <div class="content">
+            <h4>Assassin Creed Rogue</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>12.34$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="imagini/Gta San.jpg" />
+          <div class="content">
+            <h4>Grand Theft Auto San Andreas</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>15.25$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="imagini/Red Dead Redemption 2.jpg" />
+          <div class="content">
+            <h4>Red Dead Redemtion 2</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>43.22$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="imagini/Assassin Creed Brotherhood.webp" />
+          <div class="content">
+            <h4>Assassin Creed Brotherhood</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>32.45$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="imagini/CSGO.jpg" />
+          <div class="content">
+            <h4>Counter-Strike: Global Offensive</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>Free</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="imagini/Fortnite.jpg" />
+          <div class="content">
+            <h4>Fortnite</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>Free</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="imagini/Pubg Mobile.png" />
+          <div class="content">
+            <h4>God Of War Ragnarok</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>69.69$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="imagini/Free Fire.jpg" />
+          <div class="content">
+            <h4>Free Fire</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>Free</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="imagini/Call Of Duty Mobile.png" />
+          <div class="content">
+            <h4>Call Of Duty Mobile</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing <br /><span>5.35$</span></p>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="card" data-item="mobile">
+            <img src="imagini/Standoff 2.webp" />
+            <div class="content">
+              <h4>Standoff 2</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>Free</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card" data-item="mobile">
+            <img src="imagini/Asphalt 8.jpg" />
+            <div class="content">
+              <h4>Asphalt 8</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>5.05$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="pc">
+            <img src="imagini/Just_Cause_3.jpg" />
+            <div class="content">
+              <h4>Just Cause 3</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>25.05$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="mobile">
+            <img src="imagini/Dragin city.jpg" />
+            <div class="content">
+              <h4>Dragon City</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>free</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="pc">
+            <img src="imagini/Euro Truck Simulator 2.webp" />
+            <div class="content">
+              <h4>Euro Truck Simulator 2</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>15.05$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="mobile">
+            <img src="imagini/Clash Royale.jpg" />
+            <div class="content">
+              <h4>Clash Royale</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>Free</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="mobile">
+            <img src="imagini/RushRoyale.jpg" />
+            <div class="content">
+              <h4>Rush Royale</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>Free</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="PS">
+            <img src="imagini/Spider-Man.jpg" />
+            <div class="content">
+              <h4>Spider-Man</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>25.05$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="xbox">
+            <img src="imagini/SSX.jpg" />
+            <div class="content">
+              <h4>SSX</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>9.99$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="xbox">
+            <img src="imagini/The Smurfes 2.jpg" />
+            <div class="content">
+              <h4>The Smurfes 2</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>7.05$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="xbox">
+            <img src="imagini/Kinect Adventures.jpg" />
+            <div class="content">
+              <h4>Kinect Adventures</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>37.75$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="xbox">
+            <img src="imagini/UP_.jpg" />
+            <div class="content">
+              <h4>UP</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>5.05$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="PS">
+            <img src="imagini/Batman.webp" />
+            <div class="content">
+              <h4>Batman</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>25.55$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="PS">
+            <img src="imagini/guardians-of-the-galaxy.jpg" />
+            <div class="content">
+              <h4>Guardians Of The Galaxy</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>65.05$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="pc">
+            <img src="imagini/Pacific Drive.jpg" />
+            <div class="content">
+              <h4>Pacific Drive</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>34.99$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="pc">
+            <img src="imagini/Star Wars Jedi Survivor.jpg" />
+            <div class="content">
+              <h4>Star Wars Jedi Survivor</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>72.30$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" data-item="pc">
+            <img src="imagini/Starfield.jpg" />
+            <div class="content">
+              <h4>Starfield</h4>
+              <div class="progress-line"><span></span></div>
+              <div class="info">
+                <p>Pricing <br /><span>35.45$</span></p>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="info">
+        <a href="index.html" class="logo">Gammers</a>
+        <p><i class='bx bx-copyright'></i> 2023 Bagrin Mihail</p>
+        <ul>
+          <li><a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a></li>
+          <li><a href="https://discord.com/"><i class='bx bxl-discord-alt' ></i></a></li>
+          <li><a href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>
